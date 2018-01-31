@@ -88,4 +88,7 @@ lock = """
                                                                                       
 """
 
-print(lock)
+def printLock():
+    print(lock)
+
+printLock()
