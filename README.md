@@ -20,6 +20,19 @@ and [production](https://acme-v01.api.letsencrypt.org/).
 4. The hotfix release process differs as little as possible from the scheduled
    release process.
 
+## Release Schedule
+
+Boulder developers make a new release at the beginning of each week, typically
+by 10am PST **Monday**. Operations deploys the new release to the [staging
+environment](https://letsencrypt.org/docs/staging-environment/) on **Tuesday**,
+typically by 2pm PST. If there have been no issues discovered with the release
+from its time in staging, then on **Thursday** the operations team deploys the
+release to the production environment.
+
+Holidays, unexpected bugs, and other resource constraints may affect the above
+schedule and result in staging or production updates being skipped. It should be
+considered a guideline for normal releases but not a strict contract.
+
 ## Making a Release
 
 ### Regular Releases
