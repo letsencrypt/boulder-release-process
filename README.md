@@ -90,9 +90,9 @@ When doing a release, Ops' tooling will check that:
   * [Adding a new GPG key to your GitHub
     account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account)
 
-* `git` must be configured to call the correct GPG binary:
-  * (Default) on most Linux platforms: `git config --global gpg.program gpg`
-  * On macOS and some Linux platforms: `git config --global gpg.program gpg2`
+* `git` *may* need to be configured to call the correct GPG binary:
+  * The default: `git config --global gpg.program gpg` is correct for most Linux platforms
+  * On macOS and some Linux platforms: `git config --global gpg.program gpg2` is correct
 
 * `git` must be configured to use the correct GPG key:
   * [Telling Git about your GPG key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/telling-git-about-your-signing-key)
