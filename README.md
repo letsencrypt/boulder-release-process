@@ -58,8 +58,10 @@ Releases".
 When main is dirty, and has commits that are unrelated to the hotfix and too
 risky to ship to prod we need to use an adjusted hotfix process. In this case
 dev team will create a branch based on the current release tag prefixed by
-`release-branch-`. Pull requests with the hotfix code will be made against the
-release branch based on the normal Boulder development process. Once the
+`release-branch-`. Pull requests with the hotfix code will be made against
+`main`, where they will be reviewed and merged as normal. Then the resulting
+commits will be cherry-picked and used to create PRs against the release
+branch, where they will be re-reviewed and have CI re-run. Once the
 neccessary changes have been merged to the release branch dev team will create
 a new hotfix release tag based on that branch.
 
