@@ -91,4 +91,5 @@ lock = """
 def printLock():
     print(lock)
 
-printLock()
+if __name__ == '__main__':
+  printLock()
